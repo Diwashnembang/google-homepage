@@ -1,0 +1,66 @@
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15% 60% 25%;
+    grid-template-areas: "nav" "main" "footer";
+    row-gap: 10px;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 30% 11% 10%;
+    grid-template-areas: "logo" "search-box" 'buttons';
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/* working in search bar and logo */
+
+main #logo {
+    grid-area: logo;
+    padding-top: 30px;
+    justify-self: center;
+}
+
+main #search-container {
+    grid-area: search-box;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding-top: 6px;
+    width: 50%;
+    justify-self: center;
+    border-radius: 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+main #logo-search {
+    padding-top: 7px;
+    padding-left: 10px;
+}
+
+main #input-text {}
+
+[type='text'] {
+    width: 650px;
+    border-color: white;
+    height: 25px;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+main #voice-logo {
+    ;
+}
