@@ -1,66 +1,112 @@
-#container {
-    position: absolute;
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{
+    padding:0; 
+    margin:0;
+}
+html{
+    font-size: 16px; /*deffing the font size for the page */
+    font-family: 'Nanum Gothic', sans-serif;
+
+    
+}
+
+
+nav{
+    margin-top: 1rem;
+    height: auto;
+    display: flex;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    justify-content: flex-end;
+  
+  
+    
+    
+}
+.nav-container{
+   display: flex;
+   align-items: center;
+   
+   
+  
+}
+nav ul {
+    list-style-type: none;
+
+    
+}
+
+/* working with the gmail an image on the top right */
+nav #links ul{
+    display: flex;
+       
+}
+
+
+
+/* working with the image and icon on the top corner */
+nav #feature ul {
+    display: flex; 
+    align-items: center; 
+     
+    
+}
+
+nav #feature li{
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-rows: 15% 60% 25%;
-    grid-template-areas: "nav" "main" "footer";
-    row-gap: 10px;
-}
 
-nav {
-    grid-area: nav;
+    padding-right: 1rem;
+    border-radius: 50%;
+    
+    
 }
+nav #feature{
+    width:fit-content;
 
-main {
-    grid-area: main;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 30% 11% 10%;
-    grid-template-areas: "logo" "search-box" 'buttons';
-}
-
-footer {
-    grid-area: footer;
+    
 }
 
 
-/* working in search bar and logo */
-
-main #logo {
-    grid-area: logo;
-    padding-top: 30px;
-    justify-self: center;
+.img{
+    
+    width:2em;
+    height: 2rem; 
+    border-radius: 50%;
+    
+    
 }
 
-main #search-container {
-    grid-area: search-box;
-    display: flex;
-    border: 1px solid rgba(0, 0, 0, .1);
-    padding-top: 6px;
-    width: 50%;
-    justify-self: center;
-    border-radius: 25px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-bottom: 10px;
-    padding-right: 20px;
+
+
+/*with the anchore tag of navigation */
+a{
+    text-decoration: none;
+    color:black;
+    padding-left: 1rem;  /*gap betwen the text image and icone*/ 
+    
 }
 
-main #logo-search {
-    padding-top: 7px;
-    padding-left: 10px;
+/*working with hover effect of nav */
+nav #links li:hover{
+    text-decoration: underline;
 }
 
-main #input-text {}
-
-[type='text'] {
-    width: 650px;
-    border-color: white;
-    height: 25px;
-    border-color: rgba(255, 255, 255, 0.3);
+nav #feature li:hover{
+    animation-name: color;
+    animation-iteration-count: 1;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    
+    
 }
 
-main #voice-logo {
-    ;
+@keyframes color {
+   
+    100%{
+        background-color: rgba(65, 63, 63, 0.2);
+        border-radius: 50%;
+
+    }
 }
