@@ -3,6 +3,8 @@
 *{
     padding:0; 
     margin:0;
+    -webkit-appearance: none;
+    outline: none;
 }
 html{
     font-size: 16px; /*deffing the font size for the page */
@@ -64,8 +66,13 @@ nav #feature li{
 }
 nav #feature{
     width:fit-content;
+    margin: 1rem;
 
     
+}
+
+.navbox{
+    width:fit-content;
 }
 
 
@@ -93,7 +100,7 @@ nav #links li:hover{
     text-decoration: underline;
 }
 
-nav #feature li:hover{
+.material-icons:hover {
     animation-name: color;
     animation-iteration-count: 1;
     animation-duration: 1000ms;
@@ -105,8 +112,59 @@ nav #feature li:hover{
 @keyframes color {
    
     100%{
-        background-color: rgba(65, 63, 63, 0.2);
+        background-color: rgba(230, 18, 18,0.5);
         border-radius: 50%;
 
     }
 }
+
+/*working in main*/
+main .main-container{
+    background-color:white ;
+    min-height:calc(100vh - 250px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+main .google-img{
+    margin-top: 142px ;
+}
+
+main .input-area{
+    min-width:95vw;
+    min-height: 3rem;
+
+    border:1px solid black;
+    margin-top:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 4rem;
+    color: gray;
+}
+
+main input{
+    border:none;
+    min-width: 75vw;
+    min-height:3rem;
+    size:fit-content;
+    font-size: 1.2rem;
+    font-family:'Nanum Gothic', sans-serif ;
+}
+
+main input:focus{
+    outline:none;
+}
+
+main .buttons{
+    margin-top:2rem;
+}
+
+main .button1 {
+    outline: none;
+}
+
+
