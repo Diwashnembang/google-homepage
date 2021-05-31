@@ -21,29 +21,29 @@ nav{
     padding-right: 1rem;
     padding-bottom: 1rem;
     justify-content: flex-end;
-    font-size: x-small;
-  
-  
+    
+    
     
     
 }
 .nav-container{
-   display: flex;
-   align-items: center;
-   
-   
-  
+    display: flex;
+    align-items: center;
+    
+    
+    
 }
 nav ul {
     list-style-type: none;
-
+    
     
 }
 
 /* working with the gmail an image on the top right */
 nav #links ul{
     display: flex;
-       
+    font-size: x-small;
+    
 }
 
 
@@ -52,7 +52,7 @@ nav #links ul{
 nav #feature ul {
     display: flex; 
     align-items: center; 
-     
+    
     
 }
 
