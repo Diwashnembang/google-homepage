@@ -100,7 +100,7 @@ nav #links li:hover{
     text-decoration: underline;
 }
 
-.material-icons:hover {
+nav .material-icons:hover {
     animation-name: color;
     animation-iteration-count: 1;
     animation-duration: 1000ms;
@@ -112,7 +112,7 @@ nav #links li:hover{
 @keyframes color {
    
     100%{
-        background-color: rgba(230, 18, 18,0.5);
+        background-color: rgba(182, 178, 178, 0.5);
         border-radius: 50%;
 
     }
@@ -121,15 +121,17 @@ nav #links li:hover{
 /*working in main*/
 main .main-container{
     background-color:white ;
-    min-height:calc(100vh - 250px);
+    min-height:calc(100vh - 252px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background: yellow; */
 
     
 }
 
 main .google-img{
+    
     margin-top: 142px ;
 }
 
@@ -146,9 +148,14 @@ main .input-area{
     color: gray;
 }
 
+main .input-area:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 main input{
     border:none;
     min-width: 75vw;
+    
     min-height:3rem;
     size:fit-content;
     font-size: 1.2rem;
@@ -159,12 +166,115 @@ main input:focus{
     outline:none;
 }
 
+
+
 main .buttons{
-    margin-top:2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+    /* border: 1px red solid; */
+    height: 2rem;
 }
 
-main .button1 {
-    outline: none;
+main .btm1{
+    
+    margin-left: 1rem;
+    /* border: 1px black solid; */
+    padding: 0.4rem 1rem 0rem 0rem;
+    background: rgba(206, 205, 205, 0.1);
 }
 
+main .btm2{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* border: 1px black solid; */
+    padding:0.4rem 1rem;
+    background: rgba(206, 205, 205, 0.1);
+    
+}
+
+main .btm1:hover,.btm2:hover{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+   
+    
+}
+
+/* footer */
+footer{
+    background:rgba(206, 205, 205, 0.1);
+    font-size: small;
+}
+
+
+footer .location{
+    padding:1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+}
+
+footer .links{
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid red; */
+}
+
+footer .abouts ul{
+    /* border:1px solid rgb(82, 26, 235); */
+    display: flex;
+    list-style: none;
+    padding:1rem;
+    justify-content: center;
+}
+
+footer .privacy ul{
+    /* border:1px solid rgb(165, 223, 31); */
+    display: flex;
+    list-style: none;
+    padding:1rem;
+    justify-content: center;
+
+}
+
+@media (min-width:700px) {
+    
+    main .input-area{
+        min-width:75vw;
+        
+    }
+    
+    main input{
+        border:none;
+        min-width: 60vw;
+
+    
+    }
+    footer{
+        margin-top: 3.5rem;
+    }
+
+    footer .links{
+        display: flex;
+        flex-direction: row;
+        border: rgba(0, 0, 0, 0.3);
+    
+        justify-content: space-between;
+    }
+
+}
+
+@media (min-width:950px) {
+    main .input-area{
+        min-width:40vw;
+        
+    }
+    
+    main input{
+        border:none;
+        min-width: 32vw;
+    }
+
+    
+    
+}
 
