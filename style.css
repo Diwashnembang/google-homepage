@@ -21,6 +21,7 @@ nav{
     padding-right: 1rem;
     padding-bottom: 1rem;
     justify-content: flex-end;
+    font-size: x-small;
   
   
     
@@ -175,6 +176,7 @@ main .buttons{
     
     /* border: 1px red solid; */
     height: 2rem;
+    font-size:x-small;
 }
 
 main .btm1{
@@ -203,7 +205,7 @@ main .btm1:hover,.btm2:hover{
 /* footer */
 footer{
     background:rgba(206, 205, 205, 0.1);
-    font-size: small;
+    font-size: x-small;
 }
 
 
@@ -225,6 +227,7 @@ footer .abouts ul{
     list-style: none;
     padding:1rem;
     justify-content: center;
+    flex-wrap: nowrap;
 }
 
 footer .privacy ul{
@@ -235,6 +238,9 @@ footer .privacy ul{
     justify-content: center;
 
 }
+
+
+
 
 @media (min-width:700px) {
     
@@ -280,13 +286,4 @@ footer .privacy ul{
     
 }
 
-@media (max-width:371px) {
 
-    body{
-        background-color: rosybrown;
-    }
-    main .buttons{
-        font-size: 10px;
-    }
-    
-}
