@@ -274,7 +274,19 @@ footer .privacy ul{
         min-width: 32vw;
     }
 
+   
+
     
     
 }
 
+@media (max-width:371px) {
+
+    body{
+        background-color: rosybrown;
+    }
+    main .buttons{
+        font-size: 10px;
+    }
+    
+}
